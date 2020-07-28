@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  /* background-color: rgb(200, 37, 8); */
+  background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  max-width: 400px;
+  margin: 20px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0px;
+  background: #af317b;
+  box-shadow: 5px 5px 10px #752152, -5px -5px 10px #e941a4;
+}
+
+.preloader .img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(240, 240, 240);
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+input:focus {
+  background-color: white;
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.place .city {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.place .date {
+  color: white;
+  font-size: 16px;
+}
+
+.current .temperature {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+  margin: 30px 0px;
+  text-shadow: 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.current .temperature span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.current .min-max,
+.humidity,
+.feels-like {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
